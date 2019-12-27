@@ -23,7 +23,7 @@ spec:
       restartPolicy: Always
       containers:
       - name: todo-proxy
-        image: gravitonian/todo-proxy:1.0
+        image: juniornsa/todo-proxy:1.0
         ports:
         - containerPort: 80
         resources:
