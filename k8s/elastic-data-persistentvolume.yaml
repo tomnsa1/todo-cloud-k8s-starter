@@ -11,4 +11,4 @@ spec:
  accessModes:
    - ReadWriteOnce
  hostPath:
-   path: "~/todo-app/kubedata/todo/elastic"
+   path: "/Users/macbook/todo-app/kubedata/todo/elastic"
