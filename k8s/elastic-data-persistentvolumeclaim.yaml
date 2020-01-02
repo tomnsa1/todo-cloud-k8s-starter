@@ -4,7 +4,7 @@ metadata:
   namespace: todo
   name: elastic-data-pvc
 spec:
-  storageClassName: manual
+#  storageClassName: manual   we would be using the default hostpath for dynamic
   accessModes:
   - ReadWriteOnce
   resources:
