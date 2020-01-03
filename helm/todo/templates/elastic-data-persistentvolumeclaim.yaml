@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  namespace: {{ template "todo.fullname" . }}-todo
+  name: elastic-data-pvc
+spec:
+#  storageClassName: manual   we would be using the default hostpath for dynamic
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Mi
